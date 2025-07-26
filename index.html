@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bán hàng tự động</title>
+       <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+        <nav class="navbar">
+            <div class="header">
+                <div class="menu-container">
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <div class="menu" id="menu">
+                        <a href="index.html">Trang chủ</a>
+                        <a href="product.html">Thời trang</a>
+                        <a href="sale.html">Sale</a>
+                    </div>
+                </div>
+                <div class="logo">MIKENCO<sup>&reg;</sup></div>
+                <div class="icons">             
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>    
+        </nav>
+    </div>
+    <div class="container">
+            <div class="banner">
+                <img src="banner/banner.png" alt="banner">
+            </div>
+        
+        <div class="text">
+            <h2>Curated by the House</h2>
+        </div>
+        <div class="comlum">
+            <li class="box">
+                <a href="" ><img src="banner/banner2.jpg" alt="forhim">
+                    <span>FOR HIM</span></a>
+                
+            </li>
+            <li class="box">
+                <a href="" ><img src="banner/banner3.jpg" alt="forher">
+                    <span>FOR HER</span></a>
+                
+            </li>
+            <li class="box">
+                <a href="" ><img src="banner/banner4.jpg" alt="forcouple">
+                    <span>FOR COUPLE</span></a>
+                
+            </li>
+        </div>
+    </div>  
+    
+    <div class="marquee">
+        <div class="marquee-container">
+            <div class="marquee-text">
+                <span>✦ FREE SHIPPING ON ALL ORDERS OVER 99$ ✦</span>
+                <span>MIKENCO ✦ FIRST TIME CUSTOMERS ✦</span>
+            </div>
+        </div>        
+        <div class="marquee-container">
+            <div class="marquee-text"> 
+                <span>FREE SHIPPING ON ALL ORDERS OVER 99$ ✦</span>
+                <span>5% OFF FOR FIRST ORDER </span>
+                ✦</div>
+        </div>
+    </div>
+    <video height="100%" width="100%" autoplay muted loop>
+        <source src="banner/video-mikenco.mp4" type="video/mp4">
+        
+    </video>
+    <div class="text2"style="letter-spacing: 5px">
+        <h2>B E S T    S A L L E R</h2>
+    </div>
+    <div class="product-grid">
+        <div class="product">
+            <img src="banner/items.jpg" alt="NO REGRETS TSHIRT">
+            <div class="product-info">
+                <p>NO REGRETS TSHIRT</p>
+                <span class="price">650.000 VND</span>
+            </div>
+            <span class="plus-icon">+</span>
+        </div>
+
+        <div class="product">
+            <img src="banner/items1.jpg" alt="GENERATION STREETWEAR TSHIRT">
+            <div class="product-info">
+                <p>GENERATION STREETWEAR </p>
+                <span class="price">650.000 VND</span>
+            </div>
+            <span class="plus-icon">+</span>
+        </div>
+
+        <div class="product">
+            <img src="banner/items2.jpg" alt="88 TIMELESS TREASURE JERSEY">
+            <div class="product-info">
+                <p>88 TIMELESS TREASURE </p>
+                <span class="price">850.000 VND</span>
+            </div>
+            <span class="plus-icon">+</span>
+        </div>
+
+        <div class="product">
+            <img src="banner/items3.jpg" alt="25 MESH JERSEY TSHIRT">
+            <div class="product-info">
+                <p>25 MESH JERSEY TSHIRT</p>
+                <span class="price">640.000 VND</span>
+                <span class="old-price">800.000 VND</span>
+            </div>
+            <span class="plus-icon">+</span>
+        </div>
+        <div class="product">
+            <img src="banner/items4.jpg" alt="25 MESH JERSEY TSHIRT">
+            <div class="product-info">
+                <p>25 MESH JERSEY TSHIRT</p>
+                <span class="price">640.000 VND</span>
+                <span class="old-price">800.000 VND</span>
+            </div>
+            <span class="plus-icon">+</span>
+        </div>
+    </div>   
+   </div>
+   <div class="banne">
+        <h1 class="title">Explore Our Trendy</h1>
+        <a href="#" class="discover-link">Discover →</a>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-text"> 
+            <span class="vl">COUTURE CLUB ✦ </span>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">MIKENCO<sup>&reg;</sup></div>
+                <div class="footer-bottom">
+                    <p>© 2021 MIKENCO, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        <div class="footer-social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+    <script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    var overlay = document.getElementById("overlay");
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+        overlay.style.display = "none";
+    } else {
+        menu.style.left = "0px";
+        overlay.style.display = "block";
+    }
+}
+function closeMenu() {
+    var menu = document.getElementById("menu");
+    var overlay = document.getElementById("overlay");
+    menu.style.left = "-250px";
+    overlay.style.display = "none";
+}
+
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menu");
+    var menuIcon = document.querySelector(".menu-icon");
+    var overlay = document.getElementById("overlay");
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        closeMenu();
+    }
+});
+let lastScrollTop = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", function () {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+        // Khi cuộn xuống -> Hiện menu
+        navbar.style.top = "0";
+    } else {
+        // Khi cuộn lên -> Ẩn menu
+        navbar.style.top = "10px";
+    }
+
+    lastScrollTop = currentScroll;
+});
+
+    </script>
+</body>
+</html>
